@@ -1,0 +1,8 @@
+Website-Monatsbericht für {{ month }}
+
+Besucher: {{ visitors }}
+Besuche: {{ visits }}
+Seitenaufrufe: {{ views }}
+
+Viele Grüße
+Ihr Website-Reporter

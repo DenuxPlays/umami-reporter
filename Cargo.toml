@@ -1,0 +1,37 @@
+[package]
+name = "umami-reporter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.53.2", features = ["macros", "rt-multi-thread"] }
+
+# CLI
+clap = { version = "4.6.7", features = ["derive", "env"] }
+clap-verbosity-flag = { version = "3.0.4", default-features = false, features = ["tracing"] }
+
+# HTTP requests
+reqwest = { version = "0.13.5", features = ["json"] }
+
+# Serializing
+serde_json = "1.0.154"
+
+# Email
+lettre = { version = "0.11.23", default-features = false, features = ["builder", "hostname", "smtp-transport", "tokio1-rustls-tls"] }
+
+# Templating
+minijinja = { version = "3.0.0", features = ["serde"] }
+
+# Time management
+jiff = "0.2.38"
+
+# Env file loading
+dotenvy = "0.15.7"
+
+# Errors
+anyhow = "1.0.104"
+
+# Logging
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"

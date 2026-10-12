@@ -1,0 +1,7 @@
+.git
+.github
+.idea
+.env
+target
+Dockerfile
+README.md
