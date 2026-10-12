@@ -35,7 +35,7 @@ pub fn render(report: &Report) -> Result<RenderedEmail> {
         views => report.views,
     };
     Ok(RenderedEmail {
-        subject: format!("Umami-Monatsbericht für {}", report.month),
+        subject: format!("Website-Monatsbericht für {}", report.month),
         text: environment
             .get_template("report.txt")?
             .render(&template_context)?,
