@@ -30,7 +30,7 @@ jiff = "0.2.39"
 dotenvy = "0.15.7"
 
 # Errors
-anyhow = "1.0.104"
+anyhow = "1.0.105"
 
 # Logging
 tracing = "0.1.44"
